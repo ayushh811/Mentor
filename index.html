@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MENTORA</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #7b42c9, #4a2ab5);
+            color: white;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffb347;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .main-btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background: linear-gradient(45deg, #ff7a18, #ffb347);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .main-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* SECTION */
+        .section {
+            background: #f5f7fb;
+            color: #333;
+            padding: 50px 20px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* COURSES */
+        .courses {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 15px;
+            width: 220px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-btn {
+            padding: 8px 15px;
+            font-size: 14px;
+            background: #6c5ce7;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .card-btn:hover {
+            background: #00b894;
+        }
+
+        .subway {
+            text-align: center;
+            margin-top: 10px;
+            color: rgb(5, 5, 7);
+        }
+
+        .surfer {
+            margin: 20px auto;
+            width: 80%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #958fc1, transparent);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">MENTORA</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#ai">AI Learning</a></li>
+            <li><a href="#code">Code Learning</a></li>
+            <li><a href="#ebook">E-Book</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>MENTORA</h1>
+        <p>Learn AI tools faster. Build skills that matter.</p>
+        <button class="main-btn">Get Started</button>
+    </div>
+
+    <!-- AI SECTION -->
+    <div class="section" id="ai">
+        <h2>AI Learning</h2>
+
+        <div class="courses">
+
+            <div class="course-card">
+                <img src="presentation.png">
+                <div class="card-content">
+                    <h3>Presentation</h3>
+                    <a href="https://youtu.be/Iq3ugx5BZes" target="_blank">
+                        <button class="card-btn">Watch</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="notebooklm.png">
+                <div class="card-content">
+                    <h3>NotebookLM</h3>
+                    <a href="https://youtu.be/Ds2YipD16is" target="_blank">
+                        <button class="card-btn">Watch</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="IMAGE GENERATORS.png">
+                <div class="card-content">
+                    <h3>Image Generators</h3>
+                    <a href="https://youtu.be/WRGNfG90IgA" target="_blank">
+                        <button class="card-btn">Watch</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="chatgpt.png">
+                <div class="card-content">
+                    <h3>ChatGPT</h3>
+                    <a href="https://youtu.be/M8jCQ0AmV1w" target="_blank">
+                        <button class="card-btn">Watch</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CODE SECTION -->
+    <div class="section" id="code">
+        <h2 class="subway">Code Learning</h2>
+
+        <div class="surfer"></div>
+
+        <div class="courses">
+
+            <div class="course-card">
+                <img src="HTML.png" alt="HTML">
+                <div class="card-content">
+                    <h3>HTML</h3>
+                    <button class="card-btn">Watch</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="CSS.png" alt="CSS">
+                <div class="card-content">
+                    <h3>CSS</h3>
+                    <button class="card-btn">Watch</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="JAVASCRIPT.png" alt="JavaScript">
+                <div class="card-content">
+                    <h3>JavaScript</h3>
+                    <button class="card-btn">Watch</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<div class="section" id="ebook">
+    <h2>E-Book Learning</h2>
+
+    <div class="courses">
+
+        <div class="course-card">
+            <img src="E-BOOK.png">
+            <div class="card-content">
+                <h3>Youtube Millionaire</h3>
+                <a href="e-book.docx" target="_blank">
+    <button class="card-btn">Read</button>
+</a>
+            </div>
+        </div>
+
+        <div class="course-card">
+            <img src="CSS GUIDE.png">
+            <div class="card-content">
+                <h3>css guide</h3>
+                <a href="css_guidebook.docx" target="_blank">
+                    <button class="card-btn">Read</button>
+                </a>
+            </div>
+        </div>
+-
+        <div class="course-card">
+            <img src="HTML GUIDE.png" alt="HTML Guide">
+            <div class="card-content">
+                <h3>HTML GUIDE</h3>
+                <a href="html_guidebook.docx" target="_blank">
+                    <button class="card-btn">Read</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+</html>
